@@ -127,11 +127,4 @@ pip3 install -r /home/cdeep3m/requirements/py3_cdeep3m_reqs.txt
 chmod 777 /home/cdeep3m/*
 os.environ['PATH'] += ":/home/cdeep3m/"
 
-#################
-# Set Environment
-#################
-import os
-os.environ['PATH'] += ":/content/caffe_nd_sense_segmentation/"
-os.environ['CAFFE_PATH'] = "/content/caffe_nd_sense_segmentation/"
-os.environ['PYTHONPATH'] = "/content/caffe_nd_sense_segmentation/distribute/python/"
 echo "Installation of CDeep3M complete"
