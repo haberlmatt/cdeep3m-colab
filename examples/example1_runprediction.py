@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-CDeep3M-Colabs
+CDeep3M-Colab
 
 Author: M Haberl 2020
 """
