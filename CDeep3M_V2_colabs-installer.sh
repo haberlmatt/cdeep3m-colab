@@ -125,6 +125,6 @@ cd /home/cdeep3m/
 pip2 install -r /home/cdeep3m/requirements/py2_cdeep3m_reqs.txt
 pip3 install -r /home/cdeep3m/requirements/py3_cdeep3m_reqs.txt
 chmod 777 /home/cdeep3m/*
-os.environ['PATH'] += ":/home/cdeep3m/"
+
 
 echo "Installation of CDeep3M complete"
