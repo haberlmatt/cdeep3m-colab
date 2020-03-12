@@ -85,6 +85,9 @@ git clone https://github.com/haberlmatt/caffe_nd_sense_segmentation
 echo "Building CAFFE: Expected runtime 10-15 min."
 cd /home/nd_sense/caffe_nd_sense_segmentation/
 cp Makefile.config.example Makefile.config
+#Overwrite Makefile to use one that includes OpenCV
+rm Makefile
+mv Makefile_ocv Makefile
 make all -j $(($(nproc) + 1)) && \
     make test -j $(($(nproc) + 1)) && \
     make pycaffe -j $(($(nproc) + 1)) && \
@@ -126,5 +129,20 @@ pip2 install -r /home/cdeep3m/requirements/py2_cdeep3m_reqs.txt
 pip3 install -r /home/cdeep3m/requirements/py3_cdeep3m_reqs.txt
 chmod 777 /home/cdeep3m/*
 
+######################################
+# Basic tests if installation worked
+######################################
+if [[ ! -f '/home/nd_sense/caffe_nd_sense_segmentation/.build_release/tools/caffe.bin' ]] ; then
+    echo 'caffe.bin is missing, your build probably failed.'
+    exit
+fi
+if [[ ! -f '/home/nd_sense/caffe_nd_sense_segmentation/.build_release/tools/predict_seg_new.bin' ]] ; then
+    echo 'predict_seg_new.bin is missing, your caffe build probably failed.'
+    exit
+fi
+if [[ ! -f '/home/cdeep3m/runprediction.sh' ]] ; then
+    echo 'runprediction.sh is missing, your try reinstalling the CDeep3M repository from GitHub into /home/cdeep3m'
+    exit
+fi
 
 echo "Installation of CDeep3M complete"
