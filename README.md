@@ -9,8 +9,9 @@ The links below provide quick entry points with graphical user interface (GUI) o
 
 ----------------------------
 
+
 | Title | Description | Link | More Info |
-| ------ | ------ | ------ | ------ |------ |
+| ------ | ------ | ------ | ------ |
 | **Prediction GUI:** | Run CDeep3M predictions with a graphical user interface (GUI) on Google Colab's free GPUs.
  | [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/haberlmatt/cdeep3m-colab/blob/master/CDeep3M_V2_GUI.ipynb) | Doc |
 | **Re-training GUI:** | Apply transfer learning of a CDeep3M pre-trained model on GUI. | [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/haberlmatt/cdeep3m-colab/blob/master/CDeep3M_V2_RetrainingGUI.ipynb) | Doc |
