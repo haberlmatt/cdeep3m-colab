@@ -27,7 +27,7 @@ If you are comfortable using a command line interface, this provides the most fl
 
 ----------------------------
 
-**Training-GUI:** [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/haberlmatt/cdeep3m-colab/blob/master/CDeep3M_V2_Training_Model_GUI.ipynb)
+## Training-GUI: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/haberlmatt/cdeep3m-colab/blob/master/CDeep3M_V2_Training_Model_GUI.ipynb)
 
 This provides a graphical user interface (GUI) to run a CDeep3M training on your own using Googles free GPUs. *Disclaimer: Due to the limited runtime and potential interuption during the execution, training a network from scratch on Colab is not recommended. please either consider re-training a network from the modelzoo or starting a training from scratch using a Docker container and accessible GPUs in this case.* 
 
