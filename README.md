@@ -9,7 +9,7 @@ The links below provide quick entry points with graphical user interface (GUI) o
 
 ----------------------------
 
-**|  |  Title | Description | Link | More Info |**
+|  |  Title | Description | Link | More Info |
 | ------ | ------ | ------ | ------ |------ |
 
 | | **Prediction GUI:** | Run CDeep3M predictions with a graphical user interface (GUI) on Google Colab's free GPUs.
