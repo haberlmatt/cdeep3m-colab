@@ -112,15 +112,19 @@ ls /home/cdeep3m
 """
 
 ###########################
-# Install CDeep3M V2.1.0
+# Install CDeep3M2
 ###########################
-echo "Installing CDeep3M V2.1: Expected runtime 3 min."
-mkdir /home/temp
-cd /home/temp
-wget https://www.dropbox.com/s/nievvzwu4sslaqg/cdeep3m_v210.zip?dl=0
-unzip /home/temp/cdeep3m_v210.zip?dl=0 -d /home/
-rm /home/temp/*
-mv /home/cdeep3m_py3-master /home/cdeep3m
+#echo "Installing CDeep3M V2.1: Expected runtime 3 min."
+#mkdir /home/temp
+#cd /home/temp
+#git clone https://github.com/CRBS/cdeep3m2.git
+#wget https://www.dropbox.com/s/nievvzwu4sslaqg/cdeep3m_v210.zip?dl=0
+#unzip /home/temp/cdeep3m_v210.zip?dl=0 -d /home/
+#rm /home/temp/*
+echo "Installing CDeep3M2: Expected runtime 3 min."
+cd /home/
+git clone https://github.com/CRBS/cdeep3m2.git
+mv /home/cdeep3m2 /home/cdeep3m
 #!ls /home/cdeep3m
 #%cd /home/cdeep3m/
 #!ls /home/cdeep3m/requirements
