@@ -84,7 +84,7 @@ echo "Downloading CAFFE: Expected runtime 1 min."
 git clone https://github.com/haberlmatt/caffe_nd_sense_segmentation
 echo "Building CAFFE: Expected runtime 10-15 min."
 cd /home/nd_sense/caffe_nd_sense_segmentation/
-cp Makefile.config.example Makefile.config
+cp Makefile.config.colab Makefile.config
 #Overwrite Makefile to use one that includes OpenCV
 rm Makefile
 mv Makefile_ocv Makefile
